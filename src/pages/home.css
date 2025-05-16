@@ -1,0 +1,226 @@
+.Intropage {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* lock height to viewport */
+    overflow: hidden;
+  }
+  
+  .image-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  .image-slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .Intropage-img {
+    min-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 4rem;
+    z-index: 10;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 60px;
+  }
+  
+  .arrow.right {
+    right: 60px;
+  }
+  
+  .Intropage-title {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 5;
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  
+  .Intropage-title span {
+    display: block;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Destination Section */
+  
+  .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 40px 0 80px; /* add margin top & bottom for spacing */
+    padding: 0 20px; /* some horizontal padding */
+    background: #f8f8f8; /* optional background to separate visually */
+  }
+  
+  .destination-title {
+    font-size: 2rem;
+    font-style: italic;
+    color: purple;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .airplane-icon {
+    color: purple;
+    font-size: 1.5rem;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  .airplane-icon.flipped {
+    transform: scaleX(-1);
+  }
+  
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(-2px);
+    }
+    50% {
+      transform: translateY(2px);
+    }
+  }
+  
+  .destination-descript {
+    width: 400px;
+    padding: 15px 20px;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    top: -90px;
+    
+  }
+  
+  .destination-card {
+    position: relative;
+    width: 350px;
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: visible;
+    
+    margin: 200px;
+  }
+  
+  .destination-image {
+    width: 120%;
+    height: 220%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .destination-info {
+    max-width: 350px;
+    height: 180px;
+    
+    padding: 20px;
+    overflow-wrap: break-word;   /* ensures long words wrap */
+    word-break: break-word;      /* supports aggressive breaking */
+    box-sizing: border-box;      /* includes padding in max-width */
+    overflow: hidden;            /* hides anything going beyond */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(175, 171, 171);
+    border-radius: 10px;
+    position: relative;
+    left: -30%;
+    top: -70%;
+  }
+  
+  
+  .destination-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .destination-price {
+    display: inline-block;
+    padding: 10px 20px;
+    
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(58, 6, 143);
+    color: white;
+    text-align: center;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+  }
+  
+  .destination-descript{
+    font-size:14px;
+    width: 350px;
+    margin-left: -50px;
+  }
+  .destination-days {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    margin-top: auto; /* pushes days to the bottom if needed */
+  }
+  
+  .destination-list {
+    overflow-x: auto;      /* enable horizontal scroll */
+    flex-wrap: nowrap;     /* prevent wrapping so cards stay in one line */
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* hide scrollbar in IE 10+ */
+  }
+  
+  .destination-list::-webkit-scrollbar {
+    display: none;         /* hide scrollbar in Chrome, Safari, Opera */
+  }
+  
+  /* Add margin-right to each card for spacing */
+  .destination-card {
+    margin-right: 30px;    /* add space between cards horizontally */
+  }
+  
+  /* Optional: remove extra margin on last card */
+  .destination-card:last-child {
+    margin-right: 0;
+  }
+  
+  
+  
