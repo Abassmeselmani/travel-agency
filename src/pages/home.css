@@ -1,5 +1,7 @@
 .Intropage {
+
     position: relative;
+    top: -80px;
     width: 100%;
     height: 100vh; /* lock height to viewport */
     overflow: hidden;
@@ -73,7 +75,6 @@
     gap: 4px;
     margin: 40px 0 80px; /* add margin top & bottom for spacing */
     padding: 0 20px; /* some horizontal padding */
-    background: #f8f8f8; /* optional background to separate visually */
   }
   
   .destination-title {
@@ -112,6 +113,8 @@
     line-height: 1.6;
     text-align: center;
     margin: 0;
+    position: relative;
+    left: 30px;
   }
   
   .destination-list {
@@ -126,13 +129,16 @@
   
   .destination-card {
     position: relative;
+    top: -90px;
     width: 350px;
     height: 180px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     overflow: visible;
     
-    margin: 200px;
+    margin: 150px;
+    margin-bottom: 300px;
+    
   }
   
   .destination-image {
@@ -222,5 +228,182 @@
     margin-right: 0;
   }
   
+  .infocompany {
+    
+    padding: 300px 10px;
+    background: linear-gradient(to bottom right, #f0f0f0, #e7a151); /* subtle gradient */
+    text-align: center;
+  }
+  
+  .infocompany-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #3f0071; /* rich purple */
+    position: relative;
+    top: -300px;
+    left: -600px;
+    
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .infocompany-descript{
+    font-size: 35px;
+    position: relative;
+    top: -280px;
+    left: -10px;
+    width: 500px;
+    line-height: 70px;
+    font: italic;
+    font-weight: bold;
+  }
+  
+  .infocomapany-paragraph{
+    font-weight: bold;
+    position: relative;
+    top: -260px;
+    width: 600px;
+    line-height: 1.6rem;
+    
+  }
+
+  .infocompany-part2 {
+    position: relative;
+    top: -250px;
+    left: 30px;
+    display: flex;
+    
+    gap: 40px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+  }
+  
+  .infocompany-part2-img {
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .infocompany-part2-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .infocompany-part2-list li {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font: italic;
+  }
+  
+  .infocompany-part2-list li::before {
+    content: "✔";
+    color: purple;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+
+  .infocompany-part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .infocompany-part2-btn {
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .infocompany-part2-btn:hover {
+    background-color: #ff6aa5;
+  }
+  
+  .infocompany-part3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .infocompany-part2-btn {
+    padding: 10px 20px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .infocompany-part2-btn:hover {
+    background-color: #ff6aa5;
+  }
+  
+
   
   
+  .infocompany-part3{
+    position: relative;
+    top: -230px;
+    right: 480px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .infocompany-part3-img-p{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .infocompany-part3-img-p img{
+    width: 75px;
+    margin: 1px;
+    border-radius: 50%;
+    
+
+
+  }
+
+  .infocompany-part3-img-p p{
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .infocompany-main{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+
+  }
+
+  .infocompany-main2{
+    position: absolute;
+    top: 27%;
+    width: 130px;
+  }
+
+  .infocompany-main3{
+    position: absolute;
+    top: 7%;
+  }
