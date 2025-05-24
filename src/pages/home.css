@@ -494,4 +494,167 @@
   .hover-image:hover .hover-text {
     opacity: 1;
   }
+  .feature{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .feature-title{
+    position: relative;
+    left: 20%;
+    top: -600px;
+
+    font-size: 1.5rem;
+    font-style: italic;
+    color: purple;
+    font-weight: bold;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .feature-descript{
+    position: relative;
+    left: 20%;
+    top: -600px;
+    font-size: 60px;
+    width: 400px;
+
+  }
+  .feature-part2 {
+    position: relative;
+    top: -600px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Make children same height */
+  }
+  
+  .feature-part2 > div {
+    flex: none;           /* Prevent boxes from resizing */
+    width: 280px;         /* Fixed width for all boxes */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+    display: flex;        /* So content can be arranged vertically */
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+  .feature-part2 > div h1 {
+    font-size: 1.2rem; /* smaller than default */
+    margin-bottom: 10px;
+  }
+  
+  .feature-part2 > div p {
+    font-size: 0.9rem; /* smaller paragraph text */
+    line-height: 1.3;
+  }
+
+  .feature-img2{
+    position: absolute;
+    right: 2%;
+    top:430%;
+    width: 600px;
+  }
+
+  .feature-img3{
+    position: absolute;
+    top: 430%;
+    
+    width: 300px;
+
+  }
+
+
+  .offers-img1{
+    position: relative;
+    top: -490px;
+    left: -80px;
+    width: 500px;
+  }
+
+  .offers-img2{
+    position: relative;
+    top: -490px;
+    right: -320px;
+    
+    width: 900px;
+
+  }
+
+
+  .offers-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 520%;
+    left: 20%;
+  }
+
+  .offers-title{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: purple;
+    font-weight: bold;
+    margin: 0;
+    z-index: 2;
+
+  }
+
+  .offer-title2{
+    font-size: 50px;
+    font-weight: bold;
+
+  }
+
+  .offerr-descript{
+    font-size: 15px;
+    width: 600px;
+  }
+
+  .offer-learnmore{
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:rebeccapurple;
+    color: white;
+
+  }
+
+  .discount-text {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* optional space between 40 and stack */
+  }
+  
+  .big-purple {
+    font-size: 250px;
+    color: purple;
+    font-weight: bold;
+  }
+  
+  .stacked {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .black-percent {
+    font-size: 100px;
+    color: black;
+  }
+  
+  .purple-off {
+    font-size: 100px;
+    color: purple;
+    font-weight: bold;
+  }
   
