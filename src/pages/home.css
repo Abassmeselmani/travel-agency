@@ -657,4 +657,141 @@
     color: purple;
     font-weight: bold;
   }
+
+
+  .testimonal-img1{
+    position: relative;
+    top: -500px;
+    right: 90px;
+
+  }
+
+  .testimonal-img2{
+    position: relative;
+    top: -500px;
+    left: 1200px;
+
+  }
+
+  .testimonal-2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -1300px;
+    left: 600px;
+  }
+
+  .testimonal-title{
+    
+    font-size: 1.5rem;
+    font-style: italic;
+    color: purple;
+    font-weight: bold;
+    margin: 0;
+    z-index: 2;
+    margin-left: 150px;
+
+  }
+
+  .testimonal-saying{
+    font-size: 30px;
+    margin-left:100px ;
+  }
   
+  .testimonal-desc {
+  width: 500px;
+  margin-left: 40px;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: justify;
+}
+
+.testimonal-feedback{
+  position: relative;
+  top: -1200px;
+  left: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonal-feedback-backward {
+  width: 400px;
+  height: 400px;
+  padding: 0px;
+  margin-top: -20px;
+  
+  border-radius: 12px; /* rounded corners */
+  box-shadow: -80px 10px 10px rgba(255, 238, 3, 0.2);
+ /* soft shadow */
+  background-color: turquoise; /* clean background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonal-feedback-backward:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* subtle hover effect */
+}
+
+
+.testimonal-feedback-info{
+  margin-left: 50px;
+  margin-top: -80px;
+}
+
+.testimonal-feedback-info-message{
+  width: 500px;
+}
+
+.testimonal-feedback-info-img{
+  width: 150px;
+}
+
+.testimonal-feedback-img{
+  position: relative;
+  top: -80px;
+}
+
+.testimonal-stars {
+  margin-top: 10px;
+}
+
+.star-icon {
+  color: gold;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+
+.bookingplat-img{
+  position: relative;
+  top: -1100px;
+  filter: brightness(90%);
+}
+
+.bookingplat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  justify-content: center; /* center vertically inside container */
+  gap: 10px; /* space between lines */
+  position: relative;
+  top: -1600px;
+}
+
+
+.bookingplat-info-des{
+  font-size: 50px;
+  width: 900px;
+}
+
+.bookingplat-info-btn{
+  width: 180px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3f0071;
+  color: white;
+  border-radius: 50px;
+}

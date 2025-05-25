@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlane } from "@fortawesome/free-solid-svg-icons";
-
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 // Images
 import image from "../page1images/image.png";
 import image2 from "../page1images/image2.png";
@@ -26,6 +26,13 @@ import image16 from "../page1images/Features-bg.webp";
 import image17 from "../page1images/Feature-image-1.webp";
 import image18 from "../page1images/Feature-image-2.webp";
 import image19 from "../page1images/offer-bg-1.webp";
+import image20 from "../page1images/tst-image-1.webp";
+import image21 from "../page1images/test-bg.webp";
+import image22 from "../page1images/quote-left.png";
+import image23 from "../page1images/banner.webp";
+
+
+
 
 
 
@@ -268,6 +275,61 @@ function Home() {
     <span class="purple-off">off</span>
   </span>
 </h1>
+
+        </div>
+        <div className="testimonal">
+
+        <img className="testimonal-img1" src={image21}/>
+        <img className="testimonal-img2" src={image21}/>
+        <div className="testimonal-2">
+
+       
+        <h1 className="testimonal-title" >
+          <FontAwesomeIcon data-aos="fade-left" icon={faPlane} className="airplane-icon" data-aos="fade-left" />
+          &nbsp;Testimonials&nbsp;
+          <FontAwesomeIcon data-aos="fade-right" icon={faPlane} className="airplane-icon flipped" />
+        </h1>
+        <h1 className="testimonal-saying" data-aos="fade-left">Whats Our Clients Saying</h1>
+        <p className="testimonal-desc" data-aos="fade-left">Our clients rave about our exceptional the seamless experiences 
+          that exceeds their expectations
+        </p> </div>
+
+        <div className="testimonal-feedback" data-aos="fade-right">
+          <div className="testimonal-feedback-backward">
+            <div className="testimonal-feedback-front">
+            <img className="testimonal-feedback-img" src={image20}/>
+            </div>
+          </div>
+          <div className="testimonal-feedback-info">
+            <img className="testimonal-feedback-info-img" src={image22}/>
+            <p className="testimonal-feedback-info-message">"Traveling with Font Wuest was truly an unforgettable experience. From the moment I booked my trip, their team was professional, responsive, and incredibly helpful. Every detail was perfectly planned — the accommodations were comfortable, the activities were well-paced, and the local guides were knowledgeable and friendly. I felt completely relaxed knowing everything was taken care of. This agency goes above and beyond to ensure a smooth, enjoyable journey. I’m already
+               looking forward to planning my next adventure with Font Wuest!"</p>
+
+
+               <div className="testimonal-stars">
+    {[...Array(5)].map((_, index) => (
+      <FontAwesomeIcon key={index} icon={faStar} className="star-icon" />
+    ))}
+  </div>
+  
+          </div>
+
+
+        </div>
+
+        
+
+
+
+        </div>
+
+        <div className="bookingplat" >
+          <img className="bookingplat-img" data-aos="fade-bottom" src={image23}/>
+          <div className="bookingplat-info">
+          <h1 className="bookingplat-info-des" data-aos="fade-right">FRONTQUEST Is A World LeadingOnline Tour Booking Platform</h1>
+          <button className="bookingplat-info-btn" data-aos="fade-left">Learn More</button>
+          </div>
+
 
         </div>
         
