@@ -30,6 +30,10 @@ import image20 from "../page1images/tst-image-1.webp";
 import image21 from "../page1images/test-bg.webp";
 import image22 from "../page1images/quote-left.png";
 import image23 from "../page1images/banner.webp";
+import image24 from "../page1images/blog-1.webp";
+import image25 from "../page1images/blog-2.webp";
+import image26 from "../page1images/blog-3.webp";
+
 
 
 
@@ -41,11 +45,31 @@ import image23 from "../page1images/banner.webp";
 import { dest } from "../destination";
 import "./home.css";
 
+
+const blogdata = [
+  {
+    id: "1",
+    imageURL: image24,
+    paragraph: "Assertively iterate resource maximizing — Emma Mark, April 25, 2025",
+  },
+  {
+    id: "2",
+    imageURL: image25,
+    paragraph: "Assertively iterate resource maximizing — Emma Mark, April 25, 2025",
+  },
+  {
+    id: "3",
+    imageURL: image26,
+    paragraph: "Assertively iterate resource maximizing — Emma Mark, April 25, 2025",
+  },
+];
+
 function Home() {
   const sliderRef = useRef(null);
   const destinationListRef = useRef(null);
   const [titleKey, setTitleKey] = useState(0);
-
+  const [hoveredId, setHoveredId] = useState(null);
+ 
   // Initialize AOS animation library on mount
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -332,6 +356,53 @@ function Home() {
 
 
         </div>
+        <div className="blog">
+          <h1 className="blog-title" >
+          <FontAwesomeIcon data-aos="fade-right" icon={faPlane} className="airplane-icon" data-aos="fade-left" />
+          &nbsp;Blog&News&nbsp;
+          <FontAwesomeIcon data-aos="fade-right" icon={faPlane} className="airplane-icon flipped" />
+        </h1>
+
+        <div className="blof-info" data-aos="fade-left">
+          <h1 className="blof-info-title">Get More update News&Blog</h1>
+          <p className="blof-info-desc">Stay informed by subscribing to our newsletter for the latest news and 
+            insightful blog posts-your gateway to a world of updates
+          </p>
+
+        </div>
+
+
+        </div>
+
+        <div className="blog-part2" data-aos="fade-up" >
+          
+          {blogdata.map(({ id, imageURL, paragraph }) => (
+            <div key={id} className="blog-part2-info" onMouseEnter={() => setHoveredId(id)}
+          onMouseLeave={() => setHoveredId(null)}>
+              <img className="blog-image"  src={imageURL} alt={`Blog ${id}`} 
+              style={{
+        filter: hoveredId === id ? "brightness(80%)" : "none",
+        transition: "filter 0.3s ease"
+      }}/>
+    <p
+        style={{
+          backgroundColor: hoveredId === id ? "blue" : "white",
+          transition: "background-color 0.3s ease",
+          textDecoration: hoveredId === id ? "underline" : "none",
+          padding: hoveredId === id ? "15px" : "none",
+          color: hoveredId === id ? "red" : "black",
+        }}
+        className="blog-paragraph"
+      >
+        {paragraph}
+      </p>
+            </div>
+          ))}
+        </div>
+       
+
+
+        
         
 
       </div>
