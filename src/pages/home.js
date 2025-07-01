@@ -33,7 +33,7 @@ import image23 from "../page1images/banner.webp";
 import image24 from "../page1images/blog-1.webp";
 import image25 from "../page1images/blog-2.webp";
 import image26 from "../page1images/blog-3.webp";
-
+import image27 from "../page1images/footer.webp";
 
 
 
@@ -406,6 +406,57 @@ function Home() {
         
 
       </div>
+      <div className="contact" data-aos="fade-left">
+        <div className="contact-upperpart">
+        <h1 className="contact-title">Subscribe for Latest update about Traveling</h1>
+
+        <div className="contact-upperpart-right">
+          <input className="contact-upperpart-right-title" type="text" placeholder="Enter your name"/>
+          <button className="contact-upperpart-right-btn">Learn More</button>
+        </div>
+
+
+        <div>
+
+        </div>
+        </div>
+        <div className="contact-lowerpart">
+        <div>
+        <h1>FontQuest</h1>
+        <p>Go on a journey of unparalled adventure with our travel agency 
+          where every detail is curated, esuring you not only explore the world but also create chesided memory
+        </p></div>
+        
+        <div className="contact-lowerpart-right">
+  <div className="list-columns">
+    <ul className="list-column">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Flights Booking</a></li>
+    </ul>
+    <ul className="list-column">
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="#">Terms & Use</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<img className="contact-img" src={image27}/>
+
+        
+        </div>
+
+        
+
+
+
+
+      </div>
+
+      
     </>
   );
 }
